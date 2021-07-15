@@ -1,31 +1,19 @@
 #include <stdio.h>
 
-int main()
-{
-    int a; //%d
-    char b;//%c
+int main() {
+    int so_nguyen;
+    double so_thuc;
+    char ky_tu;
 
-    printf("Nhap so nguyen a:\n");
-    scanf("%d", &a);
-    // fflush(stdin);
-    printf("Nhap chu cai b\n");
-    scanf("%c", &b);
+    printf("Nhap mot so nguyen:\n");
+    scanf("%d", &so_nguyen);
+    printf("Nhap mot so thuc:\n");
+    scanf("%lf", &so_thuc);
+    fflush(stdin);
+    printf("Nhap mot ky tu:\n");
+    scanf("%c", &ky_tu);
 
-    printf("%d %c", a, b);
+    printf("%d, %.2lf, %c", so_nguyen, so_thuc, ky_tu);
 
     return 0;
 }
-
-/* 
-Nhap 1 so nguyen
-Nhap 1 chu cai
-In so va chu cai tren cung 1 dong
-
-vi du:
-
-Nhap so nguyen a:
-4
-Nhap chu cai b:
-a
-4 a
-*/

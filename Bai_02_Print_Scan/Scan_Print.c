@@ -2,14 +2,11 @@
 
 int main()
 {
-    int x = 7;
+    int x;
 
-    printf("x la: %d", x);
+    printf("Nhap x:\n");
+    scanf("%d", &x);
+    printf("x = %d", x);
 
     return 0;
 }
-//x++ x--
-//+= -= *= /=
-// %, %=
-// && ||
-// == !=

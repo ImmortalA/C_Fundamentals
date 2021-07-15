@@ -1,0 +1,13 @@
+Buổi 1: Giới thiệu, cài VSCode, print_scan
+Buổi 2 - 4: If else
+Buổi 5 - 7: For While
+Buổi 8 - 9: Function
+Buổi 10: Cộng ngày
+Buổi 11 - 13: Array
+Buổi 14 - 15: Matrix
+Buổi 16: Tic Tac Toe
+Buổi 17: String + Ceasar Cipher
+Buổi 18: Struct
+Buổi 19: Pointer
+Buổi 20: File I/O
+
