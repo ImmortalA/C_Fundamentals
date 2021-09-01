@@ -1,5 +1,4 @@
 #include "testlib.h"
-#include <stdio.h>
 
 int main()
 {
@@ -9,3 +8,4 @@ int main()
     printf("Tong = %d\n", cong(a, b));
     return 0;
 }
+//Viet thu vien gom 4 ham tong hieu tich thuong

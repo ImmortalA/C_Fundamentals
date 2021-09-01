@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-int main()
+void printHeart(int n)
 {
-    int i, j, n;
-
-    printf("Enter value of n : ");
-    scanf("%d", &n);
+    int i, j;
 
     for (i = n / 2; i <= n; i += 2)
     {
@@ -28,6 +25,10 @@ int main()
             printf("*");
         printf("\n");
     }
+}
 
+int main()
+{
+    printHeart(5);
     return 0;
 }

@@ -58,6 +58,15 @@ void ganNuaCheoChinhDuoi(int (*mat)[max], int size)
     }
 }
 
+void ganNuaCheoChinhDuoi2(int (*mat)[max], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j <= i; j++)
+            mat[i][j] = 1;
+    }
+}
+
 void ganNuaCheoPhuTren(int (*mat)[max], int size)
 {
     for (int i = 0; i < size; i++)

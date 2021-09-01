@@ -18,7 +18,7 @@ int toHop(int n, int k)
 
 int main()
 {
-    int ans = toHop(10, 2);
+    int ans = toHop(10, 3);
     printf("Ans = %d", ans);
     return 0;
 }

@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
-int main(){
+int main()
+{
+    sqrt(8);
     return 0;
 }

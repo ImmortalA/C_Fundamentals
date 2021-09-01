@@ -3,10 +3,10 @@
 
 void swap(int &a, int &b)
 {
-    int t;
-    t = a;
+    int temp;
+    temp = a;
     a = b;
-    b = t;
+    b = temp;
 }
 
 void nhapMang(int *arr, int *size)
@@ -197,7 +197,7 @@ int main()
     // xuatMang(arr, size);
     // printf("size = %d\n", size);
 
-    printf("Bai 2a/102: %d\n", bai2a_102(arr, size));
+    // printf("Bai 2a/102: %d\n", bai2a_102(arr, size));
 
     return 0;
 }

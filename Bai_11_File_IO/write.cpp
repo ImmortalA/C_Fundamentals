@@ -4,19 +4,11 @@
 
 int main()
 {
-    int num;
     char str[100];
     FILE *fptr;
-    fptr = fopen(".\\program.txt", "w");
-
-    if (fptr == NULL)
-    {
-        printf("Error!");
-        exit(1);
-    }
+    fptr = fopen(".\\filetext.txt", "w"); //w = write, r = read
 
     printf("Enter string: ");
-    // scanf("%d", &num);
     gets(str);
 
     fprintf(fptr, "%s", str);

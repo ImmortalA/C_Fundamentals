@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <math.h>
+
+//break;
+//continue;
+
+//Nhap so hang, so cot, in ra hinh chu nhat danh so tang dan
 
 int main()
 {
+    int i = 0;
     int n = 10;
 
-    for (int i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
-        if (i == 3)
-            break;
-        printf("%d ", i);
+        printf("i = %d\n", i);
     }
+    printf("After for loop, i = %d", i);
 
     return 0;
 }
-
-// Nhap n
-// Tinh tong cac so tu 1 cho toi n

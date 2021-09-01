@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int triTuyetDoi(int x)
 {
@@ -11,7 +12,14 @@ double luyThua(double x, int p)
 {
     double pow = x; //power = x^p
     if (p == 0)
+    {
+        if (x == 0)
+        {
+            printf("Error\n");
+            exit(0);
+        }
         return 1;
+    }
     for (int i = 1; i < triTuyetDoi(p); i++)
     {
         pow *= x;
@@ -25,7 +33,7 @@ double luyThua(double x, int p)
 
 int main()
 {
-    double ans = luyThua(3, 4);
+    double ans = luyThua(0, 0);
     printf("\nAns = %lf", ans);
     return 0;
 }

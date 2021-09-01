@@ -8,15 +8,20 @@ struct Diem
 
 void NhapDiem(Diem &d)
 {
-    double temp;
+    // double temp;
 
+    // printf("Nhap x:\n");
+    // scanf("%lf", &temp); //struct trong C không scanf địa chỉ các biến không phải int, do đó phải dùng biến tạm
+    // d.x = temp;
+
+    // printf("Nhap y:\n");
+    // scanf("%lf", &temp);
+    // d.y = temp;
     printf("Nhap x:\n");
-    scanf("%lf", &temp); //struct trong C không scanf địa chỉ các biến không phải int, do đó phải dùng biến tạm
-    d.x = temp;
+    scanf("%lf", &d.x);
 
     printf("Nhap y:\n");
-    scanf("%lf", &temp);
-    d.y = temp;
+    scanf("%lf", &d.y);
 }
 
 void XuatDiem(Diem d)

@@ -49,14 +49,11 @@ int main()
 
     printf("Nhap tu so:\n");
     scanf("%d", &ts);
-    printf("Nhap mau so:\n");
-    scanf("%d", &ms);
-
-    if (ms == 0)
+    do
     {
-        printf("Mau so phai khac 0");
-        return 0;
-    }
+        printf("Nhap mau so:\n");
+        scanf("%d", &ms);
+    } while (ms == 0);
 
     RutGon(&ts, &ms);
     inPhanSo(ts, ms);

@@ -10,17 +10,17 @@ char board[size] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 int isWin(int turn)
 {
     int winBoard[8][3] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < 8; i++)
     {
         int index_1 = winBoard[i][0];
         int index_2 = winBoard[i][1];
         int index_3 = winBoard[i][2];
 
         if (board[index_1] == board[index_2] && board[index_2] == board[index_3])
-            {
-                printf("Index 1: %d, Index 2: %d, Index 3: %d\n", index_1, index_2, index_3);
-                return 1;
-            }
+        {
+            printf("Index 1: %d, Index 2: %d, Index 3: %d\n", index_1, index_2, index_3);
+            return 1;
+        }
     }
     if (turn == 9)
     {
@@ -46,6 +46,8 @@ void playerMove(int turn)
     int move;
     int player;
     char mark;
+
+    //Choose mark
     if (turn % 2 == 0)
     {
         player = 2;
@@ -95,7 +97,7 @@ int main()
     }
     if (winStatus == 1)
     {
-        if (turn % 2 == 0)
+        if (turn % 2 == 1)
             printf("Player 1 Wins!\n");
         else
             printf("Player 2 Wins!\n");

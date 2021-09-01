@@ -75,12 +75,11 @@ int main()
             }
         }
         printf("\n%s\n", text);
-        
+
         printf("Continue? (1: Yes, 0: No): ");
         scanf("%d", &check);
     }
     return 0;
 }
-
 
 // for (int i = 0; text[i] != '\0'; i++)

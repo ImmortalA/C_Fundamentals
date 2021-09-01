@@ -61,16 +61,16 @@ int maxMat(int (*mat)[max], int row, int col)
     return max_mat;
 }
 
-int mixMat(int (*mat)[max], int row, int col)
+int minMat(int (*mat)[max], int row, int col)
 {
-    int mix_mat = mat[0][0];
+    int min_mat = mat[0][0];
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
-            if (mat[i][j] < mix_mat)
-                mix_mat = mat[i][j];
+            if (mat[i][j] < min_mat)
+                min_mat = mat[i][j];
     }
-    return mix_mat;
+    return min_mat;
 }
 
 void danhSoTangNgang(int (*mat)[max], int row, int col)
@@ -97,7 +97,17 @@ void danhSoTangDoc(int (*mat)[max], int row, int col)
     }
 }
 
-
+void sortNgang(int (*mat)[max], int row, int col)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            printf("%d\t", i * col + j);
+        }
+        printf("\n");
+    }
+}
 
 int main()
 {
@@ -107,7 +117,7 @@ int main()
     int row = 3, col = 4;
     // int mat[max][max] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
 
-    // // nhapMaTran(mat, row, col);
+    // nhapMaTran(mat, row, col);
     // xuatMaTran(mat, row, col);
 
     // int tong = tongMaTran(mat, row, col);
@@ -115,13 +125,15 @@ int main()
 
     // printf("Max mat = %d\n", maxMat(mat, row, col));
 
-    danhSoTangNgang(mat, row, col);
-    xuatMaTran(mat, row, col);
-    printf("==========================\n");
+    // danhSoTangNgang(mat, row, col);
+    // xuatMaTran(mat, row, col);
+    // printf("==========================\n");
 
-    danhSoTangDoc(mat, row, col);
-    xuatMaTran(mat, row, col);
-    printf("==========================\n");
+    // danhSoTangDoc(mat, row, col);
+    // xuatMaTran(mat, row, col);
+    // printf("==========================\n");
+
+    sortNgang(mat, row, col);
 
     return 0;
 }

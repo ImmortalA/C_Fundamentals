@@ -1,23 +1,17 @@
 #include <stdio.h>
 
+//int
 
-int plus(int &x)
+int printNum(int num)
 {
-    (x)++;
-    return x;
+    printf("%d\n", num);
 }
 
 int main()
 {
-    int a = 5;
-    int *x = &a;
+    int num = 10;
 
-    printf("Truoc: %d\n", a);
-    plus(a);
-    printf("Sau: %d\n", a);
+    printNum(num);
 
     return 0;
 }
-
-//global
-//local

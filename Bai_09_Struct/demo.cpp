@@ -2,40 +2,35 @@
 #include <string.h>
 #include <math.h>
 
-struct TamGiac
+#define max 50
+
+struct Diem
 {
-    float a, b, c;
+    double x, y;
 };
 
-int validTri(int a, int b, int c)
+struct TamGiac
 {
-    //thoa
-    return 1;
-    //khong thoa
-    return 0;
-}
+    Diem A, B, C;
+};
+
+int func;
+Diem func;
 
 int main()
 {
-    TamGiac ABC;
+    Diem A;
+    TamGiac tam_giac;
 
-    do
-    {
-        printf("Nhap canh a: ");
-        scanf("%f", &ABC.a);
-        printf("Nhap canh b: ");
-        scanf("%f", &ABC.b);
-        printf("Nhap canh c: ");
-        scanf("%f", &ABC.c);
-    } while (!((ABC.a + ABC.b > ABC.c) && (ABC.a + ABC.c > ABC.b) && (ABC.b + ABC.c > ABC.a)));
+    tam_giac.A.x;
 
-    float p = (ABC.a + ABC.b + ABC.c) / 2;
-    float dien_tich = sqrt(p * (p - ABC.a) * (p - ABC.b) * (p - ABC.c));
+    printf("Nhap toa do x:\n");
+    scanf("%lf", &A.x);
 
-    printf("Chu vi tam giac: %f\n", 2 * p);
-    printf("Dien tich tam giac: %f\n", dien_tich);
+    printf("Nhap toa do y:\n");
+    scanf("%lf", &A.y);
+
+    printf("(%.2lf, %.2lf)", A.x, A.y);
 
     return 0;
 }
-//Nhap 3 canh
-//Tinh dien tich, chu vi

@@ -13,14 +13,8 @@ int C(int n, int k)
     return (fact(n) / (fact(k) * fact(n - k)));
 }
 
-int main()
+void inTGPascal(int n)
 {
-    int n;
-
-    printf("Nhap so dong:\n");
-    scanf("%d", &n);
-    printf("\n");
-
     for (int dong = 0; dong < n; dong++)
     {
         for (int cot = 0; cot <= dong; cot++)
@@ -29,4 +23,16 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n;
+
+    printf("Nhap so dong:\n");
+    scanf("%d", &n);
+    printf("\n");
+
+    inTGPascal(n);
+    return 0;
 }

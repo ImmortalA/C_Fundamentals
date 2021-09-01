@@ -57,3 +57,6 @@ int main()
 
     return 0;
 }
+
+// a = count++   a = count, count = count + 1
+// a = ++count   count = count + 1, a = count

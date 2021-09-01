@@ -57,5 +57,5 @@ int ngayThuN(int ngay, int thang, int nam)
 
 int main()
 {
-    printf("Ngay thu: %d", ngayThuN(1, 3, 2021));
+    printf("Ngay thu: %d", ngayThuN(5, 8, 2021));
 }
