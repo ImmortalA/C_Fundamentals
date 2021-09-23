@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-//int
+int m = 6;
 
-int printNum(int num)
+void func(int x)
 {
-    printf("%d\n", num);
+    for (int i = 1; i <= x; i++)
+        printf("%d\t", i);
 }
-
 int main()
 {
-    int num = 10;
+    int a = 7;
 
-    printNum(num);
-
+    // printf("Result: %d\n", func(a));
+    func(a);
     return 0;
 }
